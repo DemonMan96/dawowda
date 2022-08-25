@@ -1,0 +1,6428 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DemonX = Instance.new("ScreenGui")
+local normal = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local timer2 = Instance.new("TextLabel")
+local wow = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local autofarm = Instance.new("TextButton")
+local Creditsb = Instance.new("TextButton")
+local Settingsb = Instance.new("TextButton")
+local Changelogsb = Instance.new("TextButton")
+local pvp = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local AutoFarm = Instance.new("Frame")
+local autofarmab = Instance.new("TextLabel")
+local nicebro = Instance.new("Frame")
+local onoff = Instance.new("TextButton")
+local on = Instance.new("TextLabel")
+local off = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Settings = Instance.new("Frame")
+local timerab = Instance.new("TextLabel")
+local nicebro_2 = Instance.new("Frame")
+local onoff_2 = Instance.new("TextButton")
+local off_2 = Instance.new("TextLabel")
+local on_2 = Instance.new("TextLabel")
+local timerab2 = Instance.new("TextLabel")
+local nicebro_3 = Instance.new("Frame")
+local onoff_3 = Instance.new("TextButton")
+local names = Instance.new("TextLabel")
+local nicebro_4 = Instance.new("Frame")
+local onoff_4 = Instance.new("TextButton")
+local off_3 = Instance.new("TextLabel")
+local on_3 = Instance.new("TextLabel")
+local keybind = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local asd = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local Changelogs = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local name = Instance.new("TextLabel")
+local PVP = Instance.new("Frame")
+local TextLabel_18 = Instance.new("TextLabel")
+local Silentaim = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local animation = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local one = Instance.new("TextLabel")
+local special = Instance.new("TextLabel")
+local keyb = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local Login = Instance.new("TextButton")
+local Keysystem = Instance.new("TextLabel")
+local two = Instance.new("TextLabel")
+
+--Properties:
+
+DemonX.Name = "DemonX"
+DemonX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DemonX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+normal.Name = "normal"
+normal.Parent = DemonX
+normal.Active = true
+normal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+normal.Position = UDim2.new(0.219306469, 0, 0.108737879, 0)
+normal.Size = UDim2.new(0, 659, 0, 360)
+normal.Visible = false
+
+UICorner.Parent = normal
+
+timer2.Name = "timer2"
+timer2.Parent = normal
+timer2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+timer2.BackgroundTransparency = 1.000
+timer2.Position = UDim2.new(0.230099484, 0, 0.899000049, 0)
+timer2.Size = UDim2.new(0, 140, 0, 36)
+timer2.Font = Enum.Font.SourceSans
+timer2.Text = "0"
+timer2.TextColor3 = Color3.fromRGB(255, 255, 255)
+timer2.TextScaled = true
+timer2.TextSize = 14.000
+timer2.TextWrapped = true
+timer2.TextXAlignment = Enum.TextXAlignment.Left
+
+wow.Name = "wow"
+wow.Parent = normal
+wow.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+wow.Size = UDim2.new(0, 152, 0, 360)
+
+UICorner_2.Parent = wow
+
+autofarm.Name = "autofarm"
+autofarm.Parent = wow
+autofarm.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+autofarm.BorderSizePixel = 0
+autofarm.Position = UDim2.new(0, 0, 0.203480706, 0)
+autofarm.Size = UDim2.new(0, 151, 0, 25)
+autofarm.Font = Enum.Font.SourceSansBold
+autofarm.Text = "AutoFarm"
+autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+autofarm.TextScaled = true
+autofarm.TextSize = 14.000
+autofarm.TextWrapped = true
+
+Creditsb.Name = "Creditsb"
+Creditsb.Parent = wow
+Creditsb.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Creditsb.BorderSizePixel = 0
+Creditsb.Position = UDim2.new(0.00657894462, 0, 0.625356615, 0)
+Creditsb.Size = UDim2.new(0, 152, 0, 25)
+Creditsb.Font = Enum.Font.SourceSansBold
+Creditsb.Text = "Credits"
+Creditsb.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creditsb.TextScaled = true
+Creditsb.TextSize = 14.000
+Creditsb.TextWrapped = true
+
+Settingsb.Name = "Settingsb"
+Settingsb.Parent = wow
+Settingsb.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Settingsb.BorderSizePixel = 0
+Settingsb.Position = UDim2.new(0.0131578948, 0, 0.411136955, 0)
+Settingsb.Size = UDim2.new(0, 150, 0, 25)
+Settingsb.Font = Enum.Font.SourceSansBold
+Settingsb.Text = "Settings"
+Settingsb.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settingsb.TextScaled = true
+Settingsb.TextSize = 14.000
+Settingsb.TextWrapped = true
+
+Changelogsb.Name = "Changelogsb"
+Changelogsb.Parent = wow
+Changelogsb.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Changelogsb.BorderSizePixel = 0
+Changelogsb.Position = UDim2.new(0.0131578948, 0, 0.516692519, 0)
+Changelogsb.Size = UDim2.new(0, 150, 0, 25)
+Changelogsb.Font = Enum.Font.SourceSansBold
+Changelogsb.Text = "Changelogs"
+Changelogsb.TextColor3 = Color3.fromRGB(255, 255, 255)
+Changelogsb.TextScaled = true
+Changelogsb.TextSize = 14.000
+Changelogsb.TextWrapped = true
+
+pvp.Name = "pvp"
+pvp.Parent = wow
+pvp.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+pvp.BorderSizePixel = 0
+pvp.Position = UDim2.new(0, 0, 0.30625847, 0)
+pvp.Size = UDim2.new(0, 151, 0, 25)
+pvp.Font = Enum.Font.SourceSansBold
+pvp.Text = "PVP"
+pvp.TextColor3 = Color3.fromRGB(255, 255, 255)
+pvp.TextScaled = true
+pvp.TextSize = 14.000
+pvp.TextWrapped = true
+
+TextLabel.Parent = normal
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0349013656, 0, 0.915666699, 0)
+TextLabel.Size = UDim2.new(0, 127, 0, 31)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "Current Script Time:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = normal
+AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0.23975721, 0, 0, 0)
+AutoFarm.Size = UDim2.new(0, 495, 0, 319)
+AutoFarm.Visible = false
+
+autofarmab.Name = "autofarmab"
+autofarmab.Parent = AutoFarm
+autofarmab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+autofarmab.BorderSizePixel = 0
+autofarmab.Position = UDim2.new(0, 0, 0.175548583, 0)
+autofarmab.Size = UDim2.new(0, 404, 0, 38)
+autofarmab.Font = Enum.Font.SourceSans
+autofarmab.Text = "AutoFarm"
+autofarmab.TextColor3 = Color3.fromRGB(255, 255, 255)
+autofarmab.TextScaled = true
+autofarmab.TextSize = 14.000
+autofarmab.TextWrapped = true
+autofarmab.TextXAlignment = Enum.TextXAlignment.Left
+
+nicebro.Name = "nicebro"
+nicebro.Parent = autofarmab
+nicebro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nicebro.BorderSizePixel = 0
+nicebro.Position = UDim2.new(0.374697834, 0, 0.263157904, 0)
+nicebro.Size = UDim2.new(0, 92, 0, 23)
+
+onoff.Name = "onoff"
+onoff.Parent = nicebro
+onoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+onoff.BackgroundTransparency = 1.000
+onoff.BorderSizePixel = 0
+onoff.Position = UDim2.new(0.0199999996, 0, 0.068965517, 0)
+onoff.Size = UDim2.new(0, 98, 0, 27)
+onoff.Font = Enum.Font.SourceSans
+onoff.Text = ""
+onoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+onoff.TextSize = 14.000
+
+on.Name = "on"
+on.Parent = nicebro
+on.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+on.BorderSizePixel = 0
+on.Position = UDim2.new(0.5, 0, 0, 0)
+on.Size = UDim2.new(0, 46, 0, 23)
+on.Visible = false
+on.Font = Enum.Font.SourceSans
+on.Text = ""
+on.TextColor3 = Color3.fromRGB(0, 0, 0)
+on.TextSize = 14.000
+
+off.Name = "off"
+off.Parent = nicebro
+off.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+off.BorderSizePixel = 0
+off.Size = UDim2.new(0, 46, 0, 23)
+off.Font = Enum.Font.SourceSans
+off.Text = ""
+off.TextColor3 = Color3.fromRGB(0, 0, 0)
+off.TextSize = 14.000
+
+TextLabel_2.Parent = autofarmab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.619621933, 0, -0.0789473653, 0)
+TextLabel_2.Size = UDim2.new(0, 144, 0, 43)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Recommed use this script on low player servers"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = AutoFarm
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.244444445, 0, 0.0188087765, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 26)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "AutoFarm Panel"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = normal
+Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.23975721, 0, 0.0111111114, 0)
+Credits.Size = UDim2.new(0, 495, 0, 319)
+
+TextLabel_4.Parent = Credits
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0808080807, 0, 0.137931034, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 36)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Scripts & UI Made By DemonMan"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Credits
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.836990535, 0)
+TextLabel_5.Size = UDim2.new(0, 172, 0, 26)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "https://discord.gg/WyR7ftVu3j"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Credits
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.515151501, 0, 0.137931034, 0)
+TextLabel_6.Size = UDim2.new(0, 133, 0, 24)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Youtube Demon Man"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Credits
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.25656566, 0, 0.00626959233, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 32)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Credits Panel"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Credits
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0, 0, 0.918495238, 0)
+TextLabel_8.Size = UDim2.new(0, 172, 0, 26)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Demon X 2022 V2.0"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+ImageLabel.Parent = Credits
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.268686861, 0, 0.319749206, 0)
+ImageLabel.Size = UDim2.new(0, 150, 0, 141)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=10030679829"
+
+Settings.Name = "Settings"
+Settings.Parent = normal
+Settings.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.23975721, 0, 0, 0)
+Settings.Size = UDim2.new(0, 495, 0, 319)
+Settings.Visible = false
+
+timerab.Name = "timerab"
+timerab.Parent = Settings
+timerab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+timerab.BorderSizePixel = 0
+timerab.Position = UDim2.new(0.0222222228, 0, 0.0815047026, 0)
+timerab.Size = UDim2.new(0, 299, 0, 38)
+timerab.Font = Enum.Font.SourceSans
+timerab.Text = "Timer"
+timerab.TextColor3 = Color3.fromRGB(255, 255, 255)
+timerab.TextScaled = true
+timerab.TextSize = 14.000
+timerab.TextWrapped = true
+timerab.TextXAlignment = Enum.TextXAlignment.Left
+
+nicebro_2.Name = "nicebro"
+nicebro_2.Parent = timerab
+nicebro_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nicebro_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+nicebro_2.Position = UDim2.new(0.598662257, 0, 0.184210524, 0)
+nicebro_2.Size = UDim2.new(0, 92, 0, 23)
+
+onoff_2.Name = "onoff"
+onoff_2.Parent = nicebro_2
+onoff_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+onoff_2.BackgroundTransparency = 1.000
+onoff_2.BorderSizePixel = 0
+onoff_2.Position = UDim2.new(0.0199999996, 0, 0.068965517, 0)
+onoff_2.Size = UDim2.new(0, 98, 0, 27)
+onoff_2.Font = Enum.Font.SourceSans
+onoff_2.Text = ""
+onoff_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+onoff_2.TextSize = 14.000
+
+off_2.Name = "off"
+off_2.Parent = nicebro_2
+off_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+off_2.BorderSizePixel = 0
+off_2.Size = UDim2.new(0, 46, 0, 23)
+off_2.Visible = false
+off_2.Font = Enum.Font.SourceSans
+off_2.Text = ""
+off_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+off_2.TextSize = 14.000
+
+on_2.Name = "on"
+on_2.Parent = nicebro_2
+on_2.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+on_2.BorderSizePixel = 0
+on_2.Position = UDim2.new(0.5, 0, 0, 0)
+on_2.Size = UDim2.new(0, 46, 0, 23)
+on_2.Font = Enum.Font.SourceSans
+on_2.Text = ""
+on_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+on_2.TextSize = 14.000
+
+timerab2.Name = "timerab2"
+timerab2.Parent = Settings
+timerab2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+timerab2.BorderSizePixel = 0
+timerab2.Position = UDim2.new(0.0222222228, 0, 0.24764891, 0)
+timerab2.Size = UDim2.new(0, 299, 0, 38)
+timerab2.Font = Enum.Font.SourceSans
+timerab2.Text = "Reset Time"
+timerab2.TextColor3 = Color3.fromRGB(255, 255, 255)
+timerab2.TextScaled = true
+timerab2.TextSize = 14.000
+timerab2.TextWrapped = true
+timerab2.TextXAlignment = Enum.TextXAlignment.Left
+
+nicebro_3.Name = "nicebro"
+nicebro_3.Parent = timerab2
+nicebro_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nicebro_3.Position = UDim2.new(0.598662198, 0, 0.184210539, 0)
+nicebro_3.Size = UDim2.new(0, 96, 0, 24)
+
+onoff_3.Name = "onoff"
+onoff_3.Parent = nicebro_3
+onoff_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+onoff_3.BorderSizePixel = 0
+onoff_3.Position = UDim2.new(-0.0158333778, 0, -0.00718390942, 0)
+onoff_3.Size = UDim2.new(0, 98, 0, 27)
+onoff_3.Font = Enum.Font.SourceSans
+onoff_3.Text = "CLICK TO RESET"
+onoff_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+onoff_3.TextScaled = true
+onoff_3.TextSize = 14.000
+onoff_3.TextWrapped = true
+
+names.Name = "names"
+names.Parent = Settings
+names.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+names.BorderSizePixel = 0
+names.Position = UDim2.new(0.0222222228, 0, 0.407523483, 0)
+names.Size = UDim2.new(0, 299, 0, 38)
+names.Font = Enum.Font.SourceSans
+names.Text = "ShowName"
+names.TextColor3 = Color3.fromRGB(255, 255, 255)
+names.TextScaled = true
+names.TextSize = 14.000
+names.TextWrapped = true
+names.TextXAlignment = Enum.TextXAlignment.Left
+
+nicebro_4.Name = "nicebro"
+nicebro_4.Parent = names
+nicebro_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nicebro_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+nicebro_4.Position = UDim2.new(0.598662257, 0, 0.184210524, 0)
+nicebro_4.Size = UDim2.new(0, 92, 0, 23)
+
+onoff_4.Name = "onoff"
+onoff_4.Parent = nicebro_4
+onoff_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+onoff_4.BackgroundTransparency = 1.000
+onoff_4.BorderSizePixel = 0
+onoff_4.Position = UDim2.new(0.0199999996, 0, 0.068965517, 0)
+onoff_4.Size = UDim2.new(0, 98, 0, 27)
+onoff_4.Font = Enum.Font.SourceSans
+onoff_4.Text = ""
+onoff_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+onoff_4.TextSize = 14.000
+
+off_3.Name = "off"
+off_3.Parent = nicebro_4
+off_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+off_3.BorderSizePixel = 0
+off_3.Size = UDim2.new(0, 46, 0, 23)
+off_3.Visible = false
+off_3.Font = Enum.Font.SourceSans
+off_3.Text = ""
+off_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+off_3.TextSize = 14.000
+
+on_3.Name = "on"
+on_3.Parent = nicebro_4
+on_3.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+on_3.BorderSizePixel = 0
+on_3.Position = UDim2.new(0.5, 0, 0, 0)
+on_3.Size = UDim2.new(0, 46, 0, 23)
+on_3.Font = Enum.Font.SourceSans
+on_3.Text = ""
+on_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+on_3.TextSize = 14.000
+
+keybind.Name = "keybind"
+keybind.Parent = Settings
+keybind.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+keybind.BorderSizePixel = 0
+keybind.Position = UDim2.new(0.0222222228, 0, 0.561128557, 0)
+keybind.Size = UDim2.new(0, 299, 0, 38)
+keybind.Font = Enum.Font.SourceSans
+keybind.Text = "UIKEYBIND"
+keybind.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybind.TextScaled = true
+keybind.TextSize = 14.000
+keybind.TextWrapped = true
+keybind.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = keybind
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.555183947, 0, 0.0789473653, 0)
+TextButton.Size = UDim2.new(0, 119, 0, 32)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel_9.Parent = Settings
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.278787881, 0, -4.65661287e-10, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 26)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Settings"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+asd.Name = "asd"
+asd.Parent = normal
+asd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+asd.BackgroundTransparency = 1.000
+asd.Position = UDim2.new(0.00082466926, 0, 0.00830256101, 0)
+asd.Size = UDim2.new(0, 151, 0, 32)
+asd.Font = Enum.Font.Oswald
+asd.Text = "DemonX"
+asd.TextColor3 = Color3.fromRGB(0, 0, 0)
+asd.TextScaled = true
+asd.TextSize = 14.000
+asd.TextWrapped = true
+
+UICorner_3.Parent = asd
+
+TextLabel_10.Parent = normal
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.0349013656, 0, 0.829555571, 0)
+TextLabel_10.Size = UDim2.new(0, 127, 0, 31)
+TextLabel_10.Font = Enum.Font.Nunito
+TextLabel_10.Text = "Game Name: Da Hood"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+Changelogs.Name = "Changelogs"
+Changelogs.Parent = normal
+Changelogs.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Changelogs.BorderSizePixel = 0
+Changelogs.Position = UDim2.new(0.23975721, 0, 0, 0)
+Changelogs.Size = UDim2.new(0, 495, 0, 319)
+Changelogs.Visible = false
+
+TextLabel_11.Parent = Changelogs
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.244444445, 0, 0.0188087765, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 26)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Changelogs Panel"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = Changelogs
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.0808080807, 0, 0.200626954, 0)
+TextLabel_12.Size = UDim2.new(0, 163, 0, 26)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "- Version was not found!"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = Changelogs
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.0808080807, 0, 0.329153597, 0)
+TextLabel_13.Size = UDim2.new(0, 163, 0, 27)
+TextLabel_13.Visible = false
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "UI Desing Changed"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = Changelogs
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.0808080807, 0, 0.454545438, 0)
+TextLabel_14.Size = UDim2.new(0, 163, 0, 27)
+TextLabel_14.Visible = false
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Script Name Changed"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = Changelogs
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.0808080807, 0, 0.570532918, 0)
+TextLabel_15.Size = UDim2.new(0, 169, 0, 35)
+TextLabel_15.Visible = false
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Added Changable UI keybind on off"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = Changelogs
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.0929292887, 0, 0.702194333, 0)
+TextLabel_16.Size = UDim2.new(0, 163, 0, 27)
+TextLabel_16.Visible = false
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Script Performance Increased"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = Changelogs
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.549494922, 0, 0.250783652, 0)
+TextLabel_17.Size = UDim2.new(0, 163, 0, 80)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "We're trying to make DemonX as useful as we can."
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+name.Name = "name"
+name.Parent = normal
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.BorderSizePixel = 0
+name.Position = UDim2.new(0, 0, 0.749790132, 0)
+name.Size = UDim2.new(0, 172, 0, 28)
+name.Font = Enum.Font.Nunito
+name.Text = "nil"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+name.TextXAlignment = Enum.TextXAlignment.Left
+
+PVP.Name = "PVP"
+PVP.Parent = normal
+PVP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PVP.BorderSizePixel = 0
+PVP.Position = UDim2.new(0.248861909, 0, 0.0111111114, 0)
+PVP.Size = UDim2.new(0, 488, 0, 319)
+PVP.Visible = false
+
+TextLabel_18.Parent = PVP
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.244444445, 0, 0.0188087765, 0)
+TextLabel_18.Size = UDim2.new(0, 200, 0, 26)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Lock Systems & Animation Pack"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+Silentaim.Name = "Silent aim"
+Silentaim.Parent = PVP
+Silentaim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Silentaim.Position = UDim2.new(0.0282828286, 0, 0.178683385, 0)
+Silentaim.Size = UDim2.new(0, 133, 0, 32)
+Silentaim.Font = Enum.Font.SourceSans
+Silentaim.Text = "Silent Aim (DEMONX)"
+Silentaim.TextColor3 = Color3.fromRGB(0, 0, 0)
+Silentaim.TextScaled = true
+Silentaim.TextSize = 14.000
+Silentaim.TextWrapped = true
+
+UICorner_4.Parent = Silentaim
+
+animation.Name = "animation"
+animation.Parent = PVP
+animation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+animation.Position = UDim2.new(0.648484826, 0, 0.175548583, 0)
+animation.Size = UDim2.new(0, 133, 0, 32)
+animation.Font = Enum.Font.SourceSans
+animation.Text = "Animation Pack"
+animation.TextColor3 = Color3.fromRGB(0, 0, 0)
+animation.TextScaled = true
+animation.TextSize = 14.000
+animation.TextWrapped = true
+
+UICorner_5.Parent = animation
+
+Frame.Parent = DemonX
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+one.Name = "one"
+one.Parent = Frame
+one.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+one.BackgroundTransparency = 1.000
+one.Position = UDim2.new(0.367279351, 0, 0.1390834, 0)
+one.Size = UDim2.new(0, 291, 0, 60)
+one.Font = Enum.Font.Ubuntu
+one.Text = "Demon X (Da Hood)"
+one.TextColor3 = Color3.fromRGB(255, 255, 255)
+one.TextScaled = true
+one.TextSize = 14.000
+one.TextTransparency = 1.000
+one.TextWrapped = true
+
+special.Name = "special"
+special.Parent = Frame
+special.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+special.BackgroundTransparency = 1.000
+special.Position = UDim2.new(0.367279321, 0, 0.818958044, 0)
+special.Size = UDim2.new(0, 291, 0, 38)
+special.Font = Enum.Font.GothamBlack
+special.Text = "nil"
+special.TextColor3 = Color3.fromRGB(255, 255, 255)
+special.TextScaled = true
+special.TextSize = 14.000
+special.TextTransparency = 1.000
+special.TextWrapped = true
+
+keyb.Name = "keyb"
+keyb.Parent = Frame
+keyb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keyb.Position = UDim2.new(0.406193078, 0, 0.385826766, 0)
+keyb.Size = UDim2.new(0, 204, 0, 37)
+keyb.Visible = false
+keyb.Font = Enum.Font.SourceSans
+keyb.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+keyb.PlaceholderText = "Enter Key Here!"
+keyb.Text = ""
+keyb.TextColor3 = Color3.fromRGB(0, 0, 0)
+keyb.TextScaled = true
+keyb.TextSize = 14.000
+keyb.TextWrapped = true
+
+UICorner_6.Parent = keyb
+
+Login.Name = "Login"
+Login.Parent = Frame
+Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0.445355177, 0, 0.51968503, 0)
+Login.Size = UDim2.new(0, 124, 0, 23)
+Login.Visible = false
+Login.Font = Enum.Font.SourceSans
+Login.Text = "Submit"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+
+Keysystem.Name = "Keysystem"
+Keysystem.Parent = Frame
+Keysystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keysystem.BackgroundTransparency = 1.000
+Keysystem.Position = UDim2.new(0.414638162, 0, 0.621684253, 0)
+Keysystem.Size = UDim2.new(0, 194, 0, 25)
+Keysystem.Visible = false
+Keysystem.Font = Enum.Font.GothamBlack
+Keysystem.Text = "Checking Key. . ."
+Keysystem.TextColor3 = Color3.fromRGB(255, 255, 255)
+Keysystem.TextScaled = true
+Keysystem.TextSize = 14.000
+Keysystem.TextWrapped = true
+
+two.Name = "two"
+two.Parent = Frame
+two.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+two.BackgroundTransparency = 1.000
+two.Position = UDim2.new(0.414638162, 0, 0.725457847, 0)
+two.Size = UDim2.new(0, 194, 0, 25)
+two.Font = Enum.Font.GothamBlack
+two.Text = "Enabling Safety Protocols . . ."
+two.TextColor3 = Color3.fromRGB(255, 255, 255)
+two.TextScaled = true
+two.TextSize = 14.000
+two.TextTransparency = 1.000
+two.TextWrapped = true
+
+-- Scripts:
+
+local function XKNGFQY_fake_script() -- timer2.LocalScript 
+	local script = Instance.new('LocalScript', timer2)
+
+	local timer = script.Parent
+	
+	while true do
+		timer.Text = timer.Text + 1
+		wait(1)
+	end
+end
+coroutine.wrap(XKNGFQY_fake_script)()
+local function PWTJ_fake_script() -- autofarm.LocalScript 
+	local script = Instance.new('LocalScript', autofarm)
+
+	local but = script.Parent
+	local crdts = script.Parent.Parent.Parent.Credits
+	local Settings = script.Parent.Parent.Parent.Settings
+	local autofarm = script.Parent.Parent.Parent.AutoFarm
+	local change = script.Parent.Parent.Parent.Changelogs
+	local pvp = script.Parent.Parent.Parent.PVP
+	
+	but.MouseButton1Click:Connect(function()
+		crdts.Visible = false
+		Settings.Visible = false
+		autofarm.Visible = true
+		change.Visible = false
+		pvp.Visible = false
+	end)
+end
+coroutine.wrap(PWTJ_fake_script)()
+local function NBWRS_fake_script() -- Creditsb.LocalScript 
+	local script = Instance.new('LocalScript', Creditsb)
+
+	local but = script.Parent
+	local crdts = script.Parent.Parent.Parent.Credits
+	local Settings = script.Parent.Parent.Parent.Settings
+	local autofarm = script.Parent.Parent.Parent.AutoFarm
+	local change = script.Parent.Parent.Parent.Changelogs
+	local pvp = script.Parent.Parent.Parent.PVP
+	
+	but.MouseButton1Click:Connect(function()
+		crdts.Visible = true
+		Settings.Visible = false
+		autofarm.Visible = false
+		change.Visible = false
+		pvp.Visible = false
+	end)
+end
+coroutine.wrap(NBWRS_fake_script)()
+local function GKTO_fake_script() -- Settingsb.LocalScript 
+	local script = Instance.new('LocalScript', Settingsb)
+
+	local but = script.Parent
+	local crdts = script.Parent.Parent.Parent.Credits
+	local Settings = script.Parent.Parent.Parent.Settings
+	local autofarm = script.Parent.Parent.Parent.AutoFarm
+	local change = script.Parent.Parent.Parent.Changelogs
+	local pvp = script.Parent.Parent.Parent.PVP
+	
+	but.MouseButton1Click:Connect(function()
+		crdts.Visible = false
+		Settings.Visible = true
+		autofarm.Visible = false
+		change.Visible = false
+		pvp.Visible = false
+	end)
+end
+coroutine.wrap(GKTO_fake_script)()
+local function XRSVS_fake_script() -- Changelogsb.LocalScript 
+	local script = Instance.new('LocalScript', Changelogsb)
+
+	local but = script.Parent
+	local crdts = script.Parent.Parent.Parent.Credits
+	local Settings = script.Parent.Parent.Parent.Settings
+	local autofarm = script.Parent.Parent.Parent.AutoFarm
+	local change = script.Parent.Parent.Parent.Changelogs
+	local pvp = script.Parent.Parent.Parent.PVP
+	
+	but.MouseButton1Click:Connect(function()
+		crdts.Visible = false
+		Settings.Visible = false
+		autofarm.Visible = false
+		change.Visible = true
+		pvp.Visible = false
+	end)
+end
+coroutine.wrap(XRSVS_fake_script)()
+local function EROEZZI_fake_script() -- pvp.LocalScript 
+	local script = Instance.new('LocalScript', pvp)
+
+	local but = script.Parent
+	local crdts = script.Parent.Parent.Parent.Credits
+	local Settings = script.Parent.Parent.Parent.Settings
+	local autofarm = script.Parent.Parent.Parent.AutoFarm
+	local change = script.Parent.Parent.Parent.Changelogs
+	local pvp = script.Parent.Parent.Parent.PVP
+	
+	but.MouseButton1Click:Connect(function()
+		crdts.Visible = false
+		Settings.Visible = false
+		autofarm.Visible = false
+		change.Visible = false
+		pvp.Visible = true
+	end)
+end
+coroutine.wrap(EROEZZI_fake_script)()
+local function FHTC_fake_script() -- onoff.LocalScript 
+	local script = Instance.new('LocalScript', onoff)
+
+	local but = script.Parent
+	local on = script.Parent.Parent.on
+	local off = script.Parent.Parent.off
+	
+	but.MouseButton1Click:Connect(function()
+		if off.Visible == true then
+			off.Visible = false
+			on.Visible = true
+			wait()
+			--[[
+	dmnman
+	]]
+			repeat
+				wait()
+			until game:IsLoaded()
+			local gm = getrawmetatable(game)
+			setreadonly(gm, false)
+			local namecall = gm.__namecall
+			gm.__namecall =
+				newcclosure(
+					function(self, ...)
+						local args = {...}
+						if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
+						if tostring(getcallingscript()) ~= "Framework" then
+							return
+						end
+					end
+						if not checkcaller() and getnamecallmethod() == "Kick" then
+						return
+					end
+						return namecall(self, unpack(args))
+					end
+				)
+	
+			local LocalPlayer = game:GetService("Players").LocalPlayer
+	
+			function gettarget()
+				local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+				local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+				local maxdistance = math.huge
+				local target
+				for i, v in pairs(game:GetService("Workspace").Cashiers:GetChildren()) do
+					if v:FindFirstChild("Head") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+						local distance = (HumanoidRootPart.Position - v.Head.Position).magnitude
+						if distance < maxdistance then
+							target = v
+							maxdistance = distance
+						end
+					end
+				end
+				return target
+			end
+	
+			for i, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("Seat") then
+					v:Destroy()
+				end
+			end
+	
+			print("niggahood")
+	
+			shared.MoneyFarm = true -- Just execute shared.MoneyFarm = false to stop farming
+	
+			while shared.MoneyFarm do
+				wait()
+				local Target = gettarget()
+				repeat
+					wait()
+					pcall(
+						function()
+							local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+							local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+							local Combat = LocalPlayer.Backpack:FindFirstChild("Combat") or Character:FindFirstChild("Combat")
+							if not Combat then
+								Character:FindFirstChild("Humanoid").Health = 0
+								return
+							end
+							HumanoidRootPart.CFrame = Target.Head.CFrame * CFrame.new(0, -2.5, 3)
+							Combat.Parent = Character
+							Combat:Activate()
+						end
+					)
+				until not Target or Target.Humanoid.Health < 0
+				for i, v in pairs(game:GetService("Workspace").Ignored.Drop:GetDescendants()) do
+					if v:IsA("ClickDetector") and v.Parent and v.Parent.Name:find("Money") then
+						local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+						local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+						if (v.Parent.Position - HumanoidRootPart.Position).magnitude <= 18 then
+							repeat
+								wait()
+								fireclickdetector(v)
+							until not v or not v.Parent
+						end
+					end
+				end
+				wait(1)
+			end
+		else
+			on.Visible = false
+			off.Visible = true
+			--[[
+	dmnman
+	]]
+			repeat
+				wait()
+			until game:IsLoaded()
+			local gm = getrawmetatable(game)
+			setreadonly(gm, false)
+			local namecall = gm.__namecall
+			gm.__namecall =
+				newcclosure(
+					function(self, ...)
+						local args = {...}
+						if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
+						if tostring(getcallingscript()) ~= "Framework" then
+							return
+						end
+					end
+						if not checkcaller() and getnamecallmethod() == "Kick" then
+						return
+					end
+						return namecall(self, unpack(args))
+					end
+				)
+	
+			local LocalPlayer = game:GetService("Players").LocalPlayer
+	
+			function gettarget()
+				local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+				local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+				local maxdistance = math.huge
+				local target
+				for i, v in pairs(game:GetService("Workspace").Cashiers:GetChildren()) do
+					if v:FindFirstChild("Head") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+						local distance = (HumanoidRootPart.Position - v.Head.Position).magnitude
+						if distance < maxdistance then
+							target = v
+							maxdistance = distance
+						end
+					end
+				end
+				return target
+			end
+	
+			for i, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("Seat") then
+					v:Destroy()
+				end
+			end
+	
+			print("niggahood")
+	
+			shared.MoneyFarm = false -- Just execute shared.MoneyFarm = false to stop farming
+	
+			while shared.MoneyFarm do
+				wait()
+				local Target = gettarget()
+				repeat
+					wait()
+					pcall(
+						function()
+							local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+							local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+							local Combat = LocalPlayer.Backpack:FindFirstChild("Combat") or Character:FindFirstChild("Combat")
+							if not Combat then
+								Character:FindFirstChild("Humanoid").Health = 0
+								return
+							end
+							HumanoidRootPart.CFrame = Target.Head.CFrame * CFrame.new(0, -2.5, 3)
+							Combat.Parent = Character
+							Combat:Activate()
+						end
+					)
+				until not Target or Target.Humanoid.Health < 0
+				for i, v in pairs(game:GetService("Workspace").Ignored.Drop:GetDescendants()) do
+					if v:IsA("ClickDetector") and v.Parent and v.Parent.Name:find("Money") then
+						local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
+						local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+						if (v.Parent.Position - HumanoidRootPart.Position).magnitude <= 18 then
+							repeat
+								wait()
+								fireclickdetector(v)
+							until not v or not v.Parent
+						end
+					end
+				end
+				wait(1)
+			end
+		end
+	end)
+end
+coroutine.wrap(FHTC_fake_script)()
+local function SZVPE_fake_script() -- onoff_2.LocalScript 
+	local script = Instance.new('LocalScript', onoff_2)
+
+	local but = script.Parent
+	local on = script.Parent.Parent.on
+	local off = script.Parent.Parent.off
+	local timer = script.Parent.Parent.Parent.Parent.Parent.timer2
+	
+	but.MouseButton1Click:Connect(function()
+		if on.Visible == true then
+			off.Visible = true
+			on.Visible = false
+			timer.Visible = false
+		else
+			on.Visible = true
+			off.Visible = false
+			timer.Visible = true
+		end
+	end)
+end
+coroutine.wrap(SZVPE_fake_script)()
+local function ELLM_fake_script() -- onoff_3.LocalScript 
+	local script = Instance.new('LocalScript', onoff_3)
+
+	local but = script.Parent
+	local timer = script.Parent.Parent.Parent.Parent.Parent.timer2
+	
+	but.MouseButton1Click:Connect(function()
+		timer.Text = 0
+	end)
+end
+coroutine.wrap(ELLM_fake_script)()
+local function IFGZUON_fake_script() -- onoff_4.LocalScript 
+	local script = Instance.new('LocalScript', onoff_4)
+
+	local but = script.Parent
+	local on = script.Parent.Parent.on
+	local off = script.Parent.Parent.off
+	local timer = script.Parent.Parent.Parent.Parent.Parent.name
+	
+	but.MouseButton1Click:Connect(function()
+		if on.Visible == true then
+			off.Visible = true
+			on.Visible = false
+			timer.Visible = false
+		else
+			on.Visible = true
+			off.Visible = false
+			timer.Visible = true
+		end
+	end)
+end
+coroutine.wrap(IFGZUON_fake_script)()
+local function VAURE_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local UIS = game:GetService("UserInputService")
+	local PlayerMouse = game:GetService("Players").LocalPlayer:GetMouse()
+	local key = "RightShift" -- you can choose any keybind
+	
+	button.MouseButton1Click:Connect(function()
+		button.Text = ". . ."
+		local input = UIS.InputBegan:Wait()
+		if input.KeyCode.Name ~= "Unknown" then
+			button.Text = input.KeyCode.Name
+			key = input.KeyCode.Name
+		end
+	end)
+	
+	UIS.InputBegan:Connect(function(v, allowed)
+		if not allowed then
+			if v.KeyCode.Name == key then
+				if script.Parent.Parent.Parent.Parent.Parent.normal.Visible == true then
+					script.Parent.Parent.Parent.Parent.Parent.normal.Visible = false
+				else
+					script.Parent.Parent.Parent.Parent.Parent.normal.Visible = true
+				end
+			end
+		end
+	end)
+	
+	function updateLoseFocusKey()
+		button.Text = key
+	end
+	
+	updateLoseFocusKey()
+	
+	PlayerMouse.Button1Down:Connect(updateLoseFocusKey)
+	PlayerMouse.Button2Down:Connect(updateLoseFocusKey)
+end
+coroutine.wrap(VAURE_fake_script)()
+local function UVLYL_fake_script() -- normal.LocalScript 
+	local script = Instance.new('LocalScript', normal)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(UVLYL_fake_script)()
+local function NNYC_fake_script() -- asd.LocalScript 
+	local script = Instance.new('LocalScript', asd)
+
+	local colorTable = {
+		Color3.fromRGB(254,0,0);
+		Color3.fromRGB(255,127,0);
+		Color3.fromRGB(255,221,1);
+		Color3.fromRGB(0,200,0);
+		Color3.fromRGB(0,160,199);
+		Color3.fromRGB(0,55,230);
+		Color3.fromRGB(129,16,210)
+	}
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = colorTable[1]
+	i = 1
+	while true do
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, {TextColor3 = colorTable[i]})
+		tween:Play()
+		repeat wait() until tween.Completed
+		wait(0.1)
+		if i == #colorTable then
+			i = 1
+		else
+			i = i + 1
+		end
+	end
+end
+coroutine.wrap(NNYC_fake_script)()
+local function JWOBCX_fake_script() -- name.LocalScript 
+	local script = Instance.new('LocalScript', name)
+
+	local user = game.Players.LocalPlayer.Name
+	local txt = script.Parent 
+	
+	txt.Text = "Name:"..user
+end
+coroutine.wrap(JWOBCX_fake_script)()
+local function WCREKDC_fake_script() -- Silentaim.localscript 
+	local script = Instance.new('LocalScript', Silentaim)
+
+	local but = script.Parent
+	
+	but.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = 'DemonX';
+			Text = 'Made By DemonMan,press q to lock(DEMONX)';
+			Duration = 20;
+		})
+			
+		_G.KEY = "q" -- the key is q to use when u see the green dot means it lock on to them!
+		_G.PART = "HumanoidRootPart"
+		_G.PRED = 0.057
+		_G.Frame = Vector3.new(0, 0.53, 0)
+		local L_76_ = game:GetService "Workspace".CurrentCamera
+		local L_77_
+		local L_78_ = false
+		local L_79_ = nil
+		local L_80_ = game.Players.LocalPlayer:GetMouse()
+		local L_81_ = Instance.new("Part", game.Workspace)
+		local L_82_ = Instance.new("Folder", game.CoreGui)
+		function makemarker(L_86_arg0, L_87_arg1, L_88_arg2, L_89_arg3, L_90_arg4)
+			local L_91_ = Instance.new("BillboardGui", L_86_arg0)
+			L_91_.Name = "PP"
+			L_91_.Adornee = L_87_arg1
+			L_91_.Size = UDim2.new(L_89_arg3, L_90_arg4, L_89_arg3, L_90_arg4)
+			L_91_.AlwaysOnTop = true
+			local L_92_ = Instance.new("Frame", L_91_)
+			L_92_.Size = UDim2.new(4, 0, 4, 0)
+			L_92_.BackgroundTransparency = 0.1
+			L_92_.BackgroundColor3 = L_88_arg2
+			local L_93_ = Instance.new("UICorner", L_92_)
+			L_93_.CornerRadius = UDim.new(50, 50)
+			return L_91_
+		end
+		local L_83_ = game.Players:GetPlayers()
+		function noob(L_94_arg0)
+			local L_95_
+			repeat
+				wait()
+			until L_94_arg0.Character
+			local L_96_ = makemarker(L_82_, L_94_arg0.Character:WaitForChild(_G.PART), Color3.fromRGB(255, 255, 255), 0.0, 0)
+			L_96_.Name = L_94_arg0.Name
+			L_94_arg0.CharacterAdded:connect(
+				function(L_98_arg0)
+					L_96_.Adornee = L_98_arg0:WaitForChild(_G.PART)
+				end
+			)
+			local L_97_ = Instance.new("TextLabel", L_96_)
+			L_97_.BackgroundTransparency = 1
+			L_97_.Position = UDim2.new(0, 0, 0, -50)
+			L_97_.Size = UDim2.new(0, 100, 0, 100)
+			L_97_.Font = Enum.Font.SourceSansSemibold
+			L_97_.TextSize = 14
+			L_97_.TextColor3 = Color3.new(1, 1, 1)
+			L_97_.TextStrokeTransparency = 0
+			L_97_.TextYAlignment = Enum.TextYAlignment.Bottom
+			L_97_.Text = "Bling" .. L_94_arg0.Name
+			L_97_.ZIndex = 10
+			spawn(
+				function()
+					while wait() do
+						if L_94_arg0.Character then
+						end
+					end
+				end
+			)
+		end
+		for L_99_forvar0 = 1, #L_83_ do
+			if L_83_[L_99_forvar0] ~= game.Players.LocalPlayer then
+				noob(L_83_[L_99_forvar0])
+			end
+		end
+		game.Players.PlayerAdded:connect(
+			function(L_100_arg0)
+				noob(L_100_arg0)
+			end
+		)
+		game.Players.PlayerRemoving:Connect(
+			function(L_101_arg0)
+				L_82_[L_101_arg0.Name]:Destroy()
+			end
+		)
+		spawn(
+			function()
+				L_81_.Anchored = true
+				L_81_.CanCollide = false
+				L_81_.Size = Vector3.new(0.1, 0.1, 0.1)
+				L_81_.Transparency = 0.1
+				makemarker(L_81_, L_81_, Color3.fromRGB(0, 180, 0), 0.20, 0)
+			end
+		)
+		L_80_.KeyDown:Connect(
+			function(L_102_arg0)
+				if L_102_arg0 ~= _G.KEY then
+					return
+				end
+				if L_78_ then
+					L_78_ = false
+					TextLabel.TextColor3 = Color3.fromRGB(255, 20, 75)
+					TextLabel.Text = "------"
+				else
+					L_78_ = true
+					L_77_ = getClosestPlayerToCursor()
+					TextLabel.TextColor3 = Color3.fromRGB(255, 0 , 0)
+					TextLabel.Text = L_77_.Character.Humanoid.DisplayName
+				end
+			end
+		)
+		function getClosestPlayerToCursor()
+			local L_103_
+			local L_104_ = math.huge
+			for L_105_forvar0, L_106_forvar1 in pairs(game.Players:GetPlayers()) do
+				if
+					L_106_forvar1 ~= game.Players.LocalPlayer and L_106_forvar1.Character and L_106_forvar1.Character:FindFirstChild("Humanoid") and
+					L_106_forvar1.Character.Humanoid.Health ~= 0 and
+					L_106_forvar1.Character:FindFirstChild(_G.PART)
+				then
+					local L_107_ = L_76_:WorldToViewportPoint(L_106_forvar1.Character.PrimaryPart.Position)
+					local L_108_ = (Vector2.new(L_107_.X, L_107_.Y) - Vector2.new(L_80_.X, L_80_.Y)).magnitude
+					if L_108_ < L_104_ then
+						L_103_ = L_106_forvar1
+						L_104_ = L_108_
+					end
+				end
+			end
+			return L_103_
+		end
+		game:GetService "RunService".Stepped:connect(
+			function()
+				if L_78_ and L_77_.Character and L_77_.Character:FindFirstChild(_G.PART) then
+					L_81_.CFrame =
+						CFrame.new(L_77_.Character[_G.PART].Position + _G.Frame + L_77_.Character[_G.PART].Velocity * L_79_)
+				else
+					L_81_.CFrame = CFrame.new(0, 9999, 0)
+				end
+			end
+		)
+		local L_84_ = getrawmetatable(game)
+		local L_85_ = L_84_.__namecall
+		setreadonly(L_84_, false)
+		L_84_.__namecall =
+			newcclosure(
+				function(...)
+					local L_109_ = {
+						...
+					}
+					if L_78_ and getnamecallmethod() == "FireServer" and L_109_[2] == "UpdateMousePos" then
+					L_109_[3] = L_77_.Character[_G.PART].Position + _G.Frame + L_77_.Character[_G.PART].Velocity * L_79_
+					return L_85_(unpack(L_109_))
+				end
+					return L_85_(...)
+				end
+			)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_110_arg0)
+				if L_110_arg0 == "/e print" then
+					print(_G.PRED)
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_111_arg0)
+				if L_111_arg0 == "Code:1029" then
+					_G.KEY = nil
+					_G.AIR = nil
+					_G.PART = nil
+					_G.PRED = nil
+					TextLabel.Visible = false
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_112_arg0)
+				if L_112_arg0 == "/e hrp" then
+					_G.KEY = "q"
+					_G.AIR = 0.00005
+					_G.PART = "HumanoidRootPart"
+					_G.PRED = 0.032
+					TextLabel.Visible = true
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_113_arg0)
+				if L_113_arg0 == "/e lt" then
+					_G.KEY = "q"
+					_G.AIR = 0.00005
+					_G.PART = "LowerTorso"
+					_G.PRED = 0.032
+					TextLabel.Visible = true
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_114_arg0)
+				if L_114_arg0 == "Screensharing" then
+					_G.KEY = "q"
+					_G.AIR = 0.00005
+					_G.PART = "LowerTorso"
+					_G.PRED = 0.033
+					TextLabel.Visible = true
+					L_81_ = nil
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_115_arg0)
+				if L_115_arg0 == "/e P+" then
+					_G.PRED = _G.PRED + 0.001
+				end
+			end
+		)
+		game.Players.LocalPlayer.Chatted:Connect(
+			function(L_116_arg0)
+				if L_116_arg0 == "/e P-" then
+					_G.PRED = _G.PRED - 0.001
+				end
+			end
+		)
+		while wait() do
+			if
+				getClosestPlayerToCursor().Character.Humanoid.Jump == true and
+				getClosestPlayerToCursor().Character.Humanoid.FloorMaterial == Enum.Material.Air
+			then
+				_G.Frame = Vector3.new(0, -2.3, 0)
+				wait(0.05)
+			else
+				local L_117_ = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+				local L_118_ = tostring(L_117_)
+				local L_119_ = L_118_:split(" ")
+				local L_120_ = L_119_[1]
+				L_79_ = L_120_ / 1000 + _G.PRED
+				_G.Frame = Vector3.new(0, 0.53, 0)
+			end
+		end
+	end)
+end
+coroutine.wrap(WCREKDC_fake_script)()
+local function ZTFFCG_fake_script() -- animation.LocalScript 
+	local script = Instance.new('LocalScript', animation)
+
+	local but = script.Parent
+	
+	but.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = 'DemonX';
+			Text = 'Press P To close';
+			Duration = 20;
+		})
+		
+		-- // clone
+		for _, v in next, game:GetService("CoreGui"):GetChildren() do
+			if (v.Name:match("FreeAnimationPack")) then
+				v:Destroy()
+			end
+		end
+	
+		-- // Instances
+		local FreeAnimationPack = Instance.new("ScreenGui")
+		local AnimationPack = Instance.new("TextButton")
+		local Animations = Instance.new("ScrollingFrame")
+		local UIListLayout = Instance.new("UIListLayout")
+		local Lean = Instance.new("TextButton")
+		local Lay = Instance.new("TextButton")
+		local Dance1 = Instance.new("TextButton")
+		local Dance2 = Instance.new("TextButton")
+		local Greet = Instance.new("TextButton")
+		local ChestPump = Instance.new("TextButton")
+		local Praying = Instance.new("TextButton")
+		local Stop = Instance.new("TextButton")
+		local UniversalAnimation = Instance.new("Animation")
+	
+		-- // Utility
+		function stopTracks()
+			for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+				if (v.Animation.AnimationId:match("rbxassetid")) then
+					v:Stop()
+				end
+			end
+		end
+	
+		function loadAnimation(id)
+			if UniversalAnimation.AnimationId == id then
+				stopTracks()
+				UniversalAnimation.AnimationId = "1"
+			else
+				UniversalAnimation.AnimationId = id
+				local animationTrack = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(UniversalAnimation)
+				animationTrack:Play()
+			end
+		end
+	
+	
+		FreeAnimationPack.Name = "FreeAnimationPack"
+		FreeAnimationPack.Parent = game.CoreGui
+		FreeAnimationPack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		AnimationPack.Name = "AnimationPack"
+		AnimationPack.Parent = FreeAnimationPack
+		AnimationPack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		AnimationPack.BorderSizePixel = 0
+		AnimationPack.Position = UDim2.new(0, 0, 0.388007045, 0)
+		AnimationPack.Size = UDim2.new(0, 100, 0, 20)
+		AnimationPack.Font = Enum.Font.SourceSansBold
+		AnimationPack.Text = "Animations"
+		AnimationPack.TextColor3 = Color3.fromRGB(0, 0, 0)
+		AnimationPack.TextSize = 18.000
+		AnimationPack.MouseButton1Click:Connect(function()
+			if (Animations.Visible == false) then
+				Animations.Visible = true
+			end
+		end)
+	
+		Animations.Name = "Animations"
+		Animations.Parent = AnimationPack
+		Animations.Active = true
+		Animations.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+		Animations.Position = UDim2.new(-0.104712225, 0, -1.54173493, 0)
+		Animations.Size = UDim2.new(0, 120, 0, 195)
+		Animations.Visible = false
+		Animations.CanvasPosition = Vector2.new(0, 60.0000305)
+		Animations.CanvasSize = UDim2.new(0, 0, 1, 235)
+	
+		UIListLayout.Parent = Animations
+		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout.Padding = UDim.new(0, 2)
+	
+		Lean.Name = "Lean"
+		Lean.Parent = Animations
+		Lean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Lean.Size = UDim2.new(1, 0, 0, 30)
+		Lean.Font = Enum.Font.SourceSansBold
+		Lean.Text = "Lean"
+		Lean.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Lean.TextSize = 14.000
+		Lean.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3152375249")
+		end)
+	
+		Lay.Name = "Lay"
+		Lay.Parent = Animations
+		Lay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Lay.Size = UDim2.new(1, 0, 0, 30)
+		Lay.Font = Enum.Font.SourceSansBold
+		Lay.Text = "Lay"
+		Lay.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Lay.TextSize = 14.000
+		Lay.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3152378852")
+		end)
+	
+		Dance1.Name = "Dance1"
+		Dance1.Parent = Animations
+		Dance1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Dance1.Size = UDim2.new(1, 0, 0, 30)
+		Dance1.Font = Enum.Font.SourceSansBold
+		Dance1.Text = "Dance1"
+		Dance1.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Dance1.TextSize = 14.000
+		Dance1.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3189773368")
+		end)
+	
+		Dance2.Name = "Dance2"
+		Dance2.Parent = Animations
+		Dance2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Dance2.Size = UDim2.new(1, 0, 0, 30)
+		Dance2.Font = Enum.Font.SourceSansBold
+		Dance2.Text = "Dance2"
+		Dance2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Dance2.TextSize = 14.000
+		Dance2.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3189776546")
+		end)
+	
+		Greet.Name = "Greet"
+		Greet.Parent = Animations
+		Greet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Greet.Size = UDim2.new(1, 0, 0, 30)
+		Greet.Font = Enum.Font.SourceSansBold
+		Greet.Text = "Greet"
+		Greet.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Greet.TextSize = 14.000
+		Greet.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3189777795")
+		end)
+	
+		ChestPump.Name = "ChestPump"
+		ChestPump.Parent = Animations
+		ChestPump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ChestPump.Size = UDim2.new(1, 0, 0, 30)
+		ChestPump.Font = Enum.Font.SourceSansBold
+		ChestPump.Text = "Chest Pump"
+		ChestPump.TextColor3 = Color3.fromRGB(0, 0, 0)
+		ChestPump.TextSize = 14.000
+		ChestPump.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3189779152")
+		end)
+	
+		Praying.Name = "Praying"
+		Praying.Parent = Animations
+		Praying.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Praying.Size = UDim2.new(1, 0, 0, 30)
+		Praying.Font = Enum.Font.SourceSansBold
+		Praying.Text = "Praying"
+		Praying.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Praying.TextSize = 14.000
+		Praying.MouseButton1Click:Connect(function()
+			stopTracks()
+			loadAnimation("rbxassetid://3487719500")
+		end)
+	
+		Stop.Name = "Stop"
+		Stop.Parent = Animations
+		Stop.BackgroundColor3 = Color3.fromRGB(255, 112, 112)
+		Stop.Size = UDim2.new(1, 0, 0, 30)
+		Stop.Font = Enum.Font.SourceSansBold
+		Stop.Text = "Stop Animation"
+		Stop.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Stop.TextSize = 14.000
+		Stop.MouseButton1Click:Connect(function()
+			stopTracks()
+		end)
+		--close gui
+		local plr = game.Players.LocalPlayer
+	
+		plr:GetMouse().KeyDown:Connect(function(K)
+			if K == "p" then
+				Animations.Visible = false
+			end
+		end)
+		warn("loaded")
+	end)
+end
+coroutine.wrap(ZTFFCG_fake_script)()
+local function LODNL_fake_script() -- special.LocalScript 
+	local script = Instance.new('LocalScript', special)
+
+	local user = game.Players.LocalPlayer.Name
+	local txt = script.Parent 
+	
+	txt.Text = "Welcome, "..user
+end
+coroutine.wrap(LODNL_fake_script)()
+local function WEXJHT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local special = script.Parent.special
+	local ui = script.Parent
+	local ui2 = script.Parent.Parent.normal
+	local keybox = script.Parent.keyb
+	local login = script.Parent.Login
+	local one = script.Parent.one
+	
+	ui.Transparency = 1
+	wait(0.10)
+	ui.Transparency = 0.9
+	wait (0.10)
+	ui.Transparency = 0.8
+	wait(0.10)
+	ui.Transparency = 0.7
+	wait(0.10)
+	ui.Transparency = 0.6
+	wait(0.10)
+	ui.Transparency = 0.5
+	wait(0.10)
+	ui.Transparency = 0.4
+	wait(0.10)
+	ui.Transparency = 0.3
+	wait(0.10)
+	ui.Transparency = 0.2
+	wait(0.10)
+	ui.Transparency = 0.1
+	wait(0.10)
+	ui.Transparency = 0
+	wait(1.50)
+	one.TextTransparency = 1
+	wait(0.10)
+	one.TextTransparency = 0.9
+	wait (0.10)
+	one.TextTransparency = 0.8
+	wait(0.10)
+	one.TextTransparency = 0.7
+	wait(0.10)
+	one.TextTransparency = 0.6
+	wait(0.10)
+	one.TextTransparency = 0.5
+	wait(0.10)
+	one.TextTransparency = 0.4
+	wait(0.10)
+	one.TextTransparency = 0.3
+	wait(0.10)
+	one.TextTransparency = 0.2
+	wait(0.10)
+	one.TextTransparency = 0.1
+	wait(0.10)
+	one.TextTransparency = 0
+	wait(2)
+	keybox.Visible = true
+	login.Visible = true
+end
+coroutine.wrap(WEXJHT_fake_script)()
+local function XXXGGSD_fake_script() -- Login.localscript 
+	local script = Instance.new('LocalScript', Login)
+
+	local key = script.Parent.Parent.keyb
+	local login = script.Parent.Parent.Login
+	local ui = script.Parent.Parent
+	local special = script.Parent.Parent.special
+	local ui2 = script.Parent.Parent.Parent.normal
+	local checking = script.Parent.Parent.Keysystem
+	local two = script.Parent.Parent.two
+	
+	login.MouseButton1Click:Connect(function()
+		if os.date('%d') == '1' then
+			if key.Text == "BrSAxhRKuKeabetcaTtx0iUdDqQCLP" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end
+		elseif os.date('%d') == '2' then
+			if key.Text == "7vujn0R3591dSv4JEzBxE0YYJAQQJq" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end
+		elseif os.date('%d') == '3' then
+			if key.Text == "qppvpYvHQRPf26MMuz5PxRVaZYC91Y" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end
+		elseif os.date('%d') == '4' then
+			if key.Text == "TndmjQWCib54gb2owZSrfBBPRoJIwZ" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '5' then
+			if key.Text == "aspDnOu1Hxet8gsoNFsL6xfIKrjX2m" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '6' then
+			if key.Text == "4WWnVZPs9YuVOzECvpYjXAjiqETGmr" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '7' then
+			if key.Text == "ntio5xyAbm4bNjzfWFaOY42UFSGhJR" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '8' then
+			if key.Text == "IdEdD2LSw52yOymhiw0DYf2sSh37f8" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '9' then
+			if key.Text == "FHojJumnMoWPkGX7FU3whq5RjkFsxt" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '10' then
+			if key.Text == "S2XIZt1k9aBnDBjBAlhZDUvbCCYzRu" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '11' then
+			if key.Text == "Ltgxr1hcTNKD3JWupAJ4Hl4xFKTiVa" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '12' then
+			if key.Text == "bwrG1QCIVMO9RduylSoxiWNaEMlcTm" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '13' then
+			if key.Text == "sY2ItxCj6fn153idDQhGidZTBEnlNm" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '14' then
+			if key.Text == "P1ODDd1zjflpATWbJQUpqBruDOK1Pd" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '15' then
+			if key.Text == "IoTxXL8ThmqZVpMuPMmSEzq8Oh2Tgo" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '16' then
+			if key.Text == "IcyQTml3iq3GSUccf3B32RjwJBTgCK" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '17' then
+			if key.Text == "0PkMYt6x3D3to7kRPE1qC5UBVkCPPj" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '18' then
+			if key.Text == "WlNZBrkLxCNiSnYSICjpesoIQcMQ1P" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '19' then
+			if key.Text == "3YpCcPUTGU2RwfrFWYs9qOXHrNqpQX" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '20' then
+			if key.Text == "txymZSKxvRUYVfv3cVzIQOctDfCxH1" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '21' then
+			if key.Text == "sfcdYzlq2mrbjHgsdulyILiuBo99Qn" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '22' then
+			if key.Text == "CRE8nstFi98g1XAL2F7ekaWiJBm4Gh" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '23' then
+			if key.Text == "hLPVXyj0O0kNaoLjXgkJDhnpBXfnHZ" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '24' then
+			if key.Text == "VI9H8vHKm1OcV6xtc0BiGEApMqLAfb" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '25' then
+			if key.Text == "83tiSVcvOucKoeYB3JvTGhWaiLyvCT" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '26' then
+			if key.Text == "kRb6d5iOXU6Muymf6n6MLvKd7D9ojK" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '27' then
+			if key.Text == "kRb6d5iOXU6Muymf6n6MLvKd7D9ojK" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '28' then
+			if key.Text == "5WcSLYzDmKCzYCTg8KrrgN47IXMoFm" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '29' then
+			if key.Text == "ioMEHFLctreaf9lC7EEqqd6qLzKNLd" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '30' then
+			if key.Text == "KiMvVMQnOOrLz0uW1hlViTAJMUJr1m" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end	
+		elseif os.date('%d') == '31' then
+			if key.Text == "XhJDTSPiEsiY5hCZseZOS1DJUFggUR" then
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Correct Key!"
+				checking.TextColor3 = Color3.fromRGB(85, 255, 0)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				wait(1.1)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait (0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 1
+				wait(0.10)
+				two.TextTransparency = 0.9
+				wait (0.10)
+				two.TextTransparency = 0.8
+				wait(0.10)
+				two.TextTransparency = 0.7
+				wait(0.10)
+				two.TextTransparency = 0.6
+				wait(0.10)
+				two.TextTransparency = 0.5
+				wait(0.10)
+				two.TextTransparency = 0.4
+				wait(0.10)
+				two.TextTransparency = 0.3
+				wait(0.10)
+				two.TextTransparency = 0.2
+				wait(0.10)
+				two.TextTransparency = 0.1
+				wait(0.10)
+				two.TextTransparency = 0
+				two.TextTransparency = 0
+				two.Text = "Enabled Safety Protocols!"
+				two.TextColor3 = Color3.fromRGB(85, 255, 0)
+				wait(1)
+				special.TextTransparency = 1
+				wait(0.10)
+				special.TextTransparency = 0.9
+				wait (0.10)
+				special.TextTransparency = 0.8
+				wait(0.10)
+				special.TextTransparency = 0.7
+				wait(0.10)
+				special.TextTransparency = 0.6
+				wait(0.10)
+				special.TextTransparency = 0.5
+				wait(0.10)
+				special.TextTransparency = 0.4
+				wait(0.10)
+				special.TextTransparency = 0.3
+				wait(0.10)
+				special.TextTransparency = 0.2
+				wait(0.10)
+				special.TextTransparency = 0.1
+				wait(0.10)
+				special.TextTransparency = 0
+				wait(3)
+				ui.Transparency = 0
+				wait(0.10)
+				ui.Transparency = 0.1
+				wait(0.10)
+				ui.Transparency = 0.2
+				wait(0.10)
+				ui.Transparency = 0.3
+				wait(0.10)
+				ui.Transparency = 0.4
+				wait(0.10)
+				ui.Transparency = 0.5
+				wait(0.10)
+				ui.Transparency = 0.6
+				wait(0.10)
+				ui.Transparency = 0.7
+				wait(0.10)
+				ui.Transparency = 0.8
+				wait(0.10)
+				ui.Transparency = 0.9
+				wait(0.10)
+				ui.Transparency = 1
+				wait(0.1)
+				ui.Visible = false
+				ui2.Visible = true
+				ui2.Transparency = 1
+				wait(0.10)
+				ui2.Transparency = 0.9
+				wait(0.10)
+				ui2.Transparency = 0.8
+				wait(0.10)
+				ui2.Transparency = 0.7
+				wait(0.10)
+				ui2.Transparency = 0.6
+				wait(0.10)
+				ui2.Transparency = 0.5
+				wait(0.10)
+				ui2.Transparency = 0.4
+				wait(0.10)
+				ui2.Transparency = 0.3
+				wait(0.10)
+				ui2.Transparency = 0.2
+				wait(0.10)
+				ui2.Transparency = 0.1
+				wait(0.10)
+				ui2.Transparency = 0
+			else
+				checking.Visible = true
+				wait(0.90)
+				checking.Text = "Incorrect Key! Please enter again key!"
+				checking.TextColor3 = Color3.fromRGB(255, 0, 0)
+			end		
+		end
+	end)
+end
+coroutine.wrap(XXXGGSD_fake_script)()
+local function IACOID_fake_script() -- DemonX.LocalScript 
+	local script = Instance.new('LocalScript', DemonX)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "DemonBot";
+		Text = "Enabled safety protocols";
+		Duration = 20;
+	})
+	
+	local Players = game:GetService("Players") -- you should use GetService over game.Players!
+	for _, player in pairs(Players:GetPlayers()) do
+		-- this code will run for all players
+		if player.UserId == 163721789 or player.UserId == 15427717 or player.UserId == 8195210 or player.UserId == 28357488 or player.UserId == 17260230 or player.UserId == 201454243 or player.UserId == 179520654 then  
+			wait(1)
+			local plr = game:GetService('Players').LocalPlayer
+			plr:Kick('KICKED TO AVOID ADMIN-BAN (Admin in server) =)')
+	
+		else
+			print('Safe')
+		end
+	end
+	
+	
+	local AdminList = {
+		163721789, -- JokeTheFool  
+		15427717,  -- Sherosama      
+		8195210,   -- Benoxa
+		822999,    -- AStrongMuscle  
+		28357488,  -- UziGarage    
+		17260230,  -- NikoSenpai 
+		201454243, -- Papa_Mbaye 
+		179520654, -- tuhklia 
+	
+	}
+	
+	game.Players.PlayerAdded:Connect(function(player)
+		for i, v in pairs(AdminList) do
+			if player.UserId == v then
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "DemonX";
+					Text = "An admin has joined.. kicking!";
+					Duration = 20;
+				})
+				wait(2)
+				local plr = game:GetService('Players').LocalPlayer
+				plr:Kick('KICKED TO AVOID ADMIN-BAN (Admin joined) =)')
+	
+			end
+		end
+	end)
+	
+	
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "DemonX";
+		Text = "AntiKick Enabled.";
+		Duration = 20;
+	})
+end
+coroutine.wrap(IACOID_fake_script)()
+local function BXAMTKY_fake_script() -- DemonX.LocalScript 
+	local script = Instance.new('LocalScript', DemonX)
+
+	pcall(function()
+		if not game.Players.LocalPlayer:IsInGroup(8106905) then
+			coroutine.resume(coroutine.create(function()
+				wait(1)
+				game.StarterGui:SetCore("SendNotification", {
+					Title = 'you are NOT whilelisted user';
+					Text = 'why you trying dogging';
+					Duration = 20;
+				})
+				local plr = game:GetService('Players').LocalPlayer
+				plr:Kick('You Are Not Whilelisted User! (Please buy or you already whilelisted dm to demonman) =)')
+	
+			end))
+		end
+	end)
+end
+coroutine.wrap(BXAMTKY_fake_script)()
