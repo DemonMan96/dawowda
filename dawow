@@ -77,7 +77,7 @@ local two = Instance.new("TextLabel")
 --Properties:
 
 DemonX.Name = "DemonX"
-DemonX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DemonX.Parent = game.CoreGui
 DemonX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 normal.Name = "normal"
